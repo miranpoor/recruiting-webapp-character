@@ -1,3 +1,5 @@
+import { Dispatch, SetStateAction } from 'react';
+
 export type Attributes = {
     Strength: number;
     Dexterity: number;
@@ -8,3 +10,5 @@ export type Attributes = {
 };
 
 export type Class = "Barbarian" | "Wizard" | "Bard";
+
+export type Dispatcher<S> = Dispatch<SetStateAction<S>>;

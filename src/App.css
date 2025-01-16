@@ -27,7 +27,10 @@
 }
 
 .App-section {
-  flex: 1 1 0;
+  display: flex;
+  flex-flow: nowrap;
+  flex-direction: row;
+  justify-content: center;
   background-color: hsl(220deg 13% 13%);
   color: white;
 }
@@ -43,4 +46,22 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.App-section > .column {
+  margin: 20px 10px;
+  padding: 20px;
+  flex: 0 0 21%;
+  align-items: center;
+  justify-content: center;
+  border: solid 5px white;
+  border-radius: 20px;
+}
+
+.App > .save-button {
+  margin: 20px 0;
+}
+
+.App > .save-button > button {
+  padding: 10px;
 }
